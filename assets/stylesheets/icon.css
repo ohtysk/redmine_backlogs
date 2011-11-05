@@ -7,3 +7,17 @@
     padding-top: 0px;
     padding-bottom: 0px;
 }
+
+#main {
+    background:none;
+    width: none;
+}
+
+.issue, .placeholder {
+    height:80px;
+    color:black;
+}
+
+.task {
+    white-space:normal;
+}

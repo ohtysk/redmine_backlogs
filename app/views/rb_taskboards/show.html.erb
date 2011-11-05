@@ -5,7 +5,8 @@
   <%= stylesheet_link_tag 'taskboard.css', :plugin => 'redmine_backlogs', :media => 'print,screen' %>
   <%= stylesheet_link_tag 'taskboard_print.css', :plugin => 'redmine_backlogs', :media => 'print' %>
   <%= stylesheet_link_tag 'application', :media => 'all' %>
-  <script type="text/javascript" src="<%= url_for(:controller => 'rb_server_variables', :action => 'show', :section => 'taskboard', :project_id => @project.identifier, :sprint_id => @sprint.id, :format => 'js') %>"></script>
+  <%= stylesheet_link_tag 'icon.css', :plugin => 'redmine_backlogs', :media => 'print,screen' %>
+   <script type="text/javascript" src="<%= url_for(:controller => 'rb_server_variables', :action => 'show', :section => 'taskboard', :project_id => @project.identifier, :sprint_id => @sprint.id, :format => 'js') %>"></script>
   <script type="text/javascript">
     if(!RB.constants.workflow) {
       alert('<%= escape_javascript(l(:error_no_workflow_for_task_tracker)) %>');

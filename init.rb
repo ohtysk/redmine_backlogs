@@ -4,7 +4,7 @@ if Rails::VERSION::MAJOR < 3
   require 'dispatcher'
   object_to_prepare = Dispatcher
 else
-  object_to_prepare = Rails.configuration
+  object_to_prepare = ActionDispatch::Callbacks
   # if redmine plugins were railties:
   # object_to_prepare = config
 end
